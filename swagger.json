@@ -16,20 +16,31 @@
   },
   "paths": {
     "/iconify/{token}": {
-      "post": {
-        "operationId": "postMessage",
-        "description": "Post a new messages to a stall",
+      "get": {
+        "operationId": "iconifyInput",
+        "description": "Returns iconified representation of token",
         "parameters": [
           {
             "name": "token",
-            "in": "url",
-            "description": "Token that represents a public key",
+            "in": "path",
             "required": true,
-            "example": "55bad0ba6562330001000001",
-            "type": "string"
+            "type": "string",
+            "description": "Token that will be iconified"
           }
-        ]
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "description": "Standard response"
+          }
+        }
       }
     }
   }
 }
+
