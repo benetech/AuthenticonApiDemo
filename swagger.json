@@ -1,0 +1,35 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Stall RESTful API",
+    "version": "0.3.4",
+    "title": "Stall",
+    "contact": {
+      "email": "rkeiii@gmail.com"
+    }
+  },
+  "host": "api.stall.life",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "definitions": {
+  },
+  "paths": {
+    "/iconify/{token}": {
+      "post": {
+        "operationId": "postMessage",
+        "description": "Post a new messages to a stall",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "url",
+            "description": "Token that represents a public key",
+            "required": true,
+            "example": "55bad0ba6562330001000001",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  }
+}
