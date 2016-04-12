@@ -1,14 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Stall RESTful API",
-    "version": "0.3.4",
+    "description": "Authenticon RESTful API",
+    "version": "0.1",
     "title": "Stall",
     "contact": {
-      "email": "rkeiii@gmail.com"
+      "email": "rone@benetech.org"
     }
   },
-  "host": "api.stall.life",
+  "host": "api.authenticon.org",
   "schemes": ["http"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
