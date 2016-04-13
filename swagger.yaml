@@ -28,4 +28,4 @@ paths:
             type: "array"
             items:
               type: "string"
-      description: "Standard response"
+          description: "Standard response"
