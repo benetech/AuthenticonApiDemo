@@ -1,31 +1,34 @@
-swagger: "2.0"
+---
+swagger: '2.0'
 info:
-  description: "Authenticon RESTful API"
-  version: "0.2"
-  title: "Authenticon"
+  description: Authenticon RESTful API
+  version: '0.2'
+  title: Stall
   contact:
-    email: "rone@benetech.org"
-host: "authenticon-api-qa.benetech.org"
-schemes: "http"
+    email: rone@benetech.org
+host: authenticon-api-qa.benetech.org
+schemes:
+- http
 consumes:
-  - "application/json"
+- application/json
 produces:
-  - "application/json"
+- application/json
+definitions: {}
 paths:
-  /iconify/{token}:
+  "/iconify/{token}":
     get:
-      operationId: "iconifyInput"
-      description: "Returns iconified representation of token,"
+      operationId: iconifyInput
+      description: Returns iconified representation of token
       parameters:
-      - name: "token"
-        in: "path"
-        required: "true"
-        type: "string"
-        description: "Token that will be iconified"
+      - name: token
+        in: path
+        required: true
+        type: string
+        description: Token that will be iconified
       responses:
-        200:
+        '200':
           schema:
-            type: "array"
+            type: array
             items:
-              type: "string"
-          description: "Standard response"
+              type: string
+          description: Standard response
